@@ -10,7 +10,7 @@ import { Country } from '../../interfaces/pais.interface';
 })
 export class PorPaisComponent {
 
-termino:string="Hola Mundo";
+termino:string="";
 hayError:boolean=false;
 paises:Country[]=[]
 
@@ -18,8 +18,9 @@ paises:Country[]=[]
   constructor(private paisService:PaisService) { }
 
 
-  buscar(){
-    this.hayError=false;
+  buscar(termino:string){
+this.hayError=false;
+this.termino=termino;
 
 this.paisService.buscarPais(this.termino)
 .subscribe(paises=>{
