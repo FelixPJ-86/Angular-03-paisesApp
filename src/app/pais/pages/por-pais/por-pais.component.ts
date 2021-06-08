@@ -27,7 +27,7 @@ this.paisService.buscarPais(this.termino)
 this.paises=paises;
 },(err=>{
 this.hayError=true;
-this.paises=[];
+this.paises = [];
 }));
   }
 
