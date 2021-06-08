@@ -30,4 +30,11 @@ this.hayError=true;
 this.paises=[];
 }));
   }
+
+
+  sugerencias(termino:string){
+    this.hayError=false;
+    //TODO:crear sugerencia
+  }
+
 }
